@@ -1,0 +1,105 @@
+/* Body styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator container */
+#calculator {
+    background-color: #2a2a2a;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
+    max-width: 400px;
+    width: 90%;
+    overflow: hidden;
+}
+
+/* Display */
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2.5rem;
+    text-align: right;
+    border: none;
+    background-color: #3d3d3d;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Keypad grid */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Buttons */
+button {
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #666;
+    transform: scale(0.95);
+}
+
+/* Operator buttons */
+.operator-btn {
+    background: linear-gradient(135deg, #ff9a00, #ff6f00);
+    color: white;
+}
+
+.operator-btn:hover {
+    background: linear-gradient(135deg, #ffb84d, #ff8533);
+}
+
+.operator-btn:active {
+    background: linear-gradient(135deg, #ffc266, #ff944d);
+}
+
+/* Clear button style */
+.clear-btn {
+    background: linear-gradient(135deg, #e53935, #b71c1c);
+    color: white;
+}
+
+.clear-btn:hover {
+    background: linear-gradient(135deg, #ef5350, #c62828);
+}
+
+.clear-btn:active {
+    background: linear-gradient(135deg, #ef9a9a, #e53935);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #display {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+}
